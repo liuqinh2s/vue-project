@@ -11,6 +11,7 @@
       <mu-button color="grey800" style="margin-left: 16px" icon>
         <mu-icon value="add"></mu-icon>
       </mu-button>
+      <mycontent mold="hot"></mycontent>
     </mu-flex>
     <mu-drawer :open.sync="open" :docked="docked" :right="position === 'right'" style="background-color: #CCCC99">
     <div style="text-align: center; height: 12rem; border-bottom: solid 1px #BBBBBB">
@@ -21,23 +22,23 @@
         <p style="font-size: 14px;">一句话介绍自己</p>
     </div>
     <mu-list style="margin-top: 2rem;">
-      <mu-list-item button style="margin-left: 4rem;" @click="open = !open; title='热榜'">
+      <mu-list-item button style="margin-left: 4rem;" @click="open = !open; title='热榜';">
         <mu-icon value="whatshot"></mu-icon>
         <mu-list-item-title class="ml">热榜</mu-list-item-title>
       </mu-list-item>
-      <mu-list-item button style="margin-left: 4rem;" @click="open = !open; title='timeline'">
+      <mu-list-item button style="margin-left: 4rem;" @click="open = !open; title='timeline';">
         <mu-icon value="hourglass_empty"></mu-icon>
         <mu-list-item-title class="ml">timeline</mu-list-item-title>
       </mu-list-item>
-      <mu-list-item button style="margin-left: 4rem;" @click="open = !open; title='分类'">
+      <mu-list-item button style="margin-left: 4rem;" @click="open = !open; title='分类';">
         <mu-icon value="local_offer"></mu-icon>
         <mu-list-item-title class="ml">分类</mu-list-item-title>
       </mu-list-item>
-      <mu-list-item button style="margin-left: 4rem;" @click="open = !open; title='消息'">
+      <mu-list-item button style="margin-left: 4rem;" @click="open = !open; title='消息';">
         <mu-icon value="message"></mu-icon>
         <mu-list-item-title class="ml">消息</mu-list-item-title>
       </mu-list-item>
-      <mu-list-item style="margin-bottom: 2rem; margin-left: 4rem;" button @click="open = !open; title='设置'">
+      <mu-list-item style="margin-bottom: 2rem; margin-left: 4rem;" button @click="open = !open; title='设置';">
         <mu-icon value="settings"></mu-icon>
         <mu-list-item-title class="ml">设置</mu-list-item-title>
       </mu-list-item>
@@ -50,8 +51,11 @@
   </mu-container>
 </template>
 <script>
+import Content from '@/components/Content'
+
 export default {
   name: 'top-bar',
+  components: { Content },
   data() {
     return {
       docked: false,

@@ -9,14 +9,19 @@
             <mu-button flat textColor="#6567E6" style="border: solid 1px #6567E6; line-height: 0px; min-width: 70px;" small>+ 关注</mu-button>
           </mu-card-actions>
       </mu-card-header>
-      <div style="margin: 10px;">
-        <mu-card-title title="你好秋天" sub-title="原创"></mu-card-title>
-        <mu-card-text>
+      <div style="margin-left: 10px; margin-right: 10px;">
+        <mu-card-text style="font-size: 16px;">
           散落在指尖的阳光，我试着轻轻抓住光影的踪迹，它却在眉宇间投下一片淡淡的阴影。
           调皮的阳光掀动了四月的心帘，温暖如约的歌声渐起。
           似乎在诉说着，我也可以在漆黑的角落里，找到阴影背后的阳光，
           找到阳光与阴影奏出和谐的旋律。我要用一颗敏感赤诚的心迎接每一缕滑过指尖的阳光！
         </mu-card-text>
+        <div style="margin-left: 16px; margin-right: 16px; display: flex; padding: 16px;align-items: center; background-color: #EEEEEE">
+          <img src="http://wx4.sinaimg.cn/mw690/006zFO3ggy1fp44ujo5mrj30u01400xf.jpg" width="50px" height="50px">
+          <div style="margin-left: 16px;">
+            散落在指尖的阳光，我试着轻轻抓住光影的踪迹，它却在眉宇间投下一片淡淡的阴影。
+          </div>
+        </div>
       </div>
       <mu-card-actions>
         <mu-row>

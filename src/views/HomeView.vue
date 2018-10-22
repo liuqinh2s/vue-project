@@ -1,16 +1,15 @@
 <template>
   <div>
     <top-bar></top-bar>
-    <card style="margin-top: 2rem;"></card>
   </div>
 </template>
 <script>
 import TopBar from '@/components/TopBar'
-import Card from '@/components/Card'
+import Content from '@/components/Content'
 
 export default {
   name: 'home-view',
-  components: { TopBar, Card }
+  components: { TopBar, Content }
 }
 
 </script>
